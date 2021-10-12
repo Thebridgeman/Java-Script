@@ -376,3 +376,64 @@ console.log(unSTR);
 
 // we want to use this to convert an object into a serialised JSON string
 
+// Objects, Arrays + JSON activities from QA
+
+let darthVader = {
+    allegiance: "Empire",
+    weapon: "lightsaber",
+    sith: true
+};
+
+console.log(darthVader);
+
+let myArray = ["hello",'everyone'];
+
+ console.log(myArray.length);
+
+ myArray.push("goodbye");
+
+ console.log(myArray.length);
+
+ myArray.shift();
+
+ for(let eachElement of myArray) {
+     console.log(eachElement);
+ }
+
+ // end of day tasks 
+
+ //fizz buzz 
+
+ for (var i=1; i < 101; i++){
+    if (i % 15 == 0) console.log("FizzBuzz");
+    else if (i % 3 == 0) console.log("Fizz");
+    else if (i % 5 == 0) console.log("Buzz");
+    else console.log(i);
+}
+//99 bottles task
+
+var count = 99;
+while (count > 0) {
+    console.log(count + " " + getBottleWord(count) + " of beer on the wall");
+    console.log(count + " " + getBottleWord(count) + " of beer,");
+    console.log("Take one down, pass it around,");
+    count = count - 1;
+    if (count > 0) {
+        console.log(count + " " + getBottleWord(count) + " of beer on the wall.");
+    } else {
+        console.log("No more " + getBottleWord(count) + " of beer on the wall.");
+    }
+}
+
+function getBottleWord(count) {
+    return count === 1 ? "bottle" : "bottles";
+}
+
+// could probably make this smaller somehow but my brain has had enough 
+
+// refactor the fizz buzz exercise 
+
+for (let i = 0;i<100;)console.log((++i%3?'':'fizz')+(i%5?'':'buzz')||i);
+
+// had to do some googling for this refactor !
+
